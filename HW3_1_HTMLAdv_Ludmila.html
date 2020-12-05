@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смена изображений</title>
+    <script>
+       
+        window.addEventListener("load", function() {
+            let flag;
+            
+            document.getElementById("changeBtn1").addEventListener("click", function() {               
+                //смена изображения, приводит к обращению на сервер если изображение не загружено и не закешировано
+                document.getElementById("img1").src = "images/1.png";  
+            });
+            document.getElementById("changeBtn2").addEventListener("click", function() {
+                //смена изображения, приводит к обращению на сервер если изображение не загружено и не закешировано
+                document.getElementById("img1").src = "images/2.png";               
+            });
+            document.getElementById("changeBtn3").addEventListener("click", function() {
+                //смена изображения, приводит к обращению на сервер если изображение не загружено и не закешировано
+                document.getElementById("img1").src = "images/3.png";                 
+            });
+        })
+    </script>
+</head>
+<body>
+    <!-- Задание 1
+    Создайте страницу с тремя кнопками, при нажатии на каждую из кнопок должно меняться изображение,
+    выводимое на странице.-->
+    
+    <img id="img1" width="300" src="" alt="-" />
+    <br>
+    <button id="changeBtn1">изображение 1</button>    
+    <button id="changeBtn2">изображение 2</button>    
+    <button id="changeBtn3">изображение 3</button>
+</html>
+</body> 
